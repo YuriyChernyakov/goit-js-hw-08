@@ -12,8 +12,8 @@ const onInput = event => {
 feedback.addEventListener('input', throttle(onInput, 500));
 
 const fillForm = () => {
-    localstData&&localstData.email ? feedback.email.value = localstData.email: null;
-      localstData&&localstData.message ? feedback.message.value = localstData.message: null;
+    localstData && localstData.email ? feedback.email.value = localstData.email: null;
+      localstData && localstData.message ? feedback.message.value = localstData.message: null;
 }
 
 fillForm();
