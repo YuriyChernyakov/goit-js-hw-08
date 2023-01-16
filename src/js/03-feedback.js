@@ -1,4 +1,4 @@
-const throttle = require('lodash.throttle');
+import throttle from 'lodash.throttle';
 const feedback = document.querySelector('.feedback-form');
 const CURRENT_DATA = 'feedback-form-state';
 const localstData = JSON.parse(localStorage.getItem(CURRENT_DATA));
