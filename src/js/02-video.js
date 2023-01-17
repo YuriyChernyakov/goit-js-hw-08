@@ -12,3 +12,15 @@ function onPlay({ seconds }) {
 }
 
 player.setCurrentTime(localStorage.getItem(CURRENT_TIME));
+
+// function setCurrentTime() {
+//   if (localStorage.getItem(CURRENT_TIME)) {
+//     parsedTime = JSON.parse(localStorage.getItem(CURRENT_TIME));
+//     player.setCurrentTime(parsedTime);
+//   } else {
+//     parsedTime = 0;
+//     player.setCurrentTime(parsedTime);
+//   }
+// }
+
+// setCurrentTime();

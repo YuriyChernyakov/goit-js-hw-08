@@ -12,7 +12,7 @@ const onInput = event => {
 feedback.addEventListener('input', throttle(onInput, 500));
 
 const fillForm = () => {
-    localstData && localstData.email ? feedback.email.value = localstData.email: null;
+    localstData && localstData.email ? feedback.email.value = localstData.email : null;
     localstData && localstData.message ? feedback.message.value = localstData.message: null;
 }
 
@@ -20,9 +20,9 @@ fillForm();
 
 const submitClick = event => {
     event.preventDefault();
-    event.currentTarget.reset();
-    console.log('email', feedback.email.value);
+    console.log('email:', feedback.email.value);
     console.log('message:', feedback.message.value);
+    event.currentTarget.reset();
 }
 
 feedback.addEventListener('submit', submitClick)
