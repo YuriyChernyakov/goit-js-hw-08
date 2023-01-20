@@ -22,6 +22,7 @@ const submitClick = event => {
     event.preventDefault();
     console.log('email:', feedback.email.value);
     console.log('message:', feedback.message.value);
+    console.log({'email': feedback.email.value, 'message': feedback.message.value}); 
     event.currentTarget.reset();
 }
 
